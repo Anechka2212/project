@@ -11,20 +11,20 @@ int main(int argc, char* argv[])
 	long int counter = 0;
 	if (argc != 2)
 	{
-		std::cout << "×òî-òî íå òàê óêàçàíî!" << std::endl;
+		std::cout << "Ð§Ñ‚Ð¾-Ñ‚Ð¾ Ð½Ðµ Ñ‚Ð°Ðº ÑƒÐºÐ°Ð·Ð°Ð½Ð¾!" << std::endl;
 		system("pause");
 		return 1;
 	}
 	std::ifstream f(argv[1]); 
 	if (!f)
 	{
-		std::cout << "Ôàéë îòñóòñâóåò!" << std::endl;
+		std::cout << "Ð¤Ð°Ð¹Ð» Ð¾Ñ‚ÑÑƒÑ‚ÑÐ²ÑƒÐµÑ‚!" << std::endl;
 		system("pause");
 		return 1;
 	}
 	for (; std::getline(f, line); ++counter)
 		
-		std::cout << "Êîëè÷åñòâî ñòðîê â ôàéëå: " << counter << std::endl;
+		std::cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ñ€Ð¾Ðº Ð² Ñ„Ð°Ð¹Ð»Ðµ: " << counter << std::endl;
 
 	system("pause");
 	return 0;
